@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  web:
+    image: aaga-web-prod
+    ports:
+      - "8000:80"  # Mapea el puerto 80 del contenedor al puerto 8000 del host
+    restart: always
+    networks:
+      - web
+networks:
+  web:
+    driver: bridge

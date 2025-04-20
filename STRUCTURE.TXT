@@ -1,0 +1,6 @@
+public/logo.png: (Tu archivo de logo)
+src/components/Navbar.astro
+src/layouts/BaseLayout.astro
+src/pages/index.astro
+astro.config.mjs
+package.json (Este archivo debería haberse generado automáticamente, pero puedes verificar su contenido).

@@ -1,0 +1,39 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title} | AAGA</title>
+  <meta name="description" content={description ? description : "Servicios profesionales de fumigación y fontanería en Costa Rica."}>
+  <link rel="icon" type="image/png" href="/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerPolicy="no-referrer" />
+  <style>
+    /* Estilos globales básicos */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #343a40;
+      line-height: 1.7;
+    }
+
+    /* Puedes añadir más estilos globales aquí o en un archivo CSS separado */
+  </style>
+</head>
+<body>
+  <slot />
+  <script>
+    // Aquí irán los scripts globales si los tienes
+  </script>
+</body>
+</html>

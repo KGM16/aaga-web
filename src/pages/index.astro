@@ -1,0 +1,372 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+---
+
+<BaseLayout title="AAGA - Fumigación y Fontanería en Costa Rica" description="Servicios profesionales de fumigación y fontanería en toda Costa Rica. ¡Contáctenos hoy!">
+  <Navbar />
+
+  <header class="hero fade-in">
+    <h1>¡Bienvenidos a AAGA!</h1>
+    <p>Expertos en fumigación y fontanería en Costa Rica.</p>
+    <div class="hero-buttons">
+      <a href="#fumigacion" class="button primary">Ver Fumigación</a>
+      <a href="#fontaneria" class="button secondary">Ver Fontanería</a>
+    </div>
+  </header>
+
+  <section id="fumigacion" class="section">
+    <h2>Servicios de Fumigación</h2>
+    <div class="bento-grid four-items fade-up-children">
+      <div class="bento-item">
+        <h3>Fumigación Residencial</h3>
+        <p>Protege tu hogar de plagas con nuestros servicios seguros y efectivos.</p>
+      </div>
+      <div class="bento-item">
+        <h3>Fumigación Comercial</h3>
+        <p>Soluciones integrales para negocios de todos los tamaños.</p>
+      </div>
+      <div class="bento-item">
+        <h3>Fumigación Especializada</h3>
+        <p>Tratamientos para plagas específicas y situaciones complejas.</p>
+      </div>
+      <div class="bento-item">
+        <h3>Control de Termitas</h3>
+        <p>Eliminación y prevención de infestaciones de termitas.</p>
+      </div>
+    </div>
+    <div class="bento-grid four-items fade-up-children" style="margin-top: 1.5rem;">
+      <div class="bento-item">
+        <h3>Fumigación Preventiva</h3>
+        <p>Medidas para evitar futuras infestaciones.</p>
+      </div>
+      <div class="bento-item">
+        <h3>Desinfección Ambiental</h3>
+        <p>Servicios para eliminar virus y bacterias.</p>
+      </div>
+      <div class="bento-item">
+        <h3>Control de Roedores</h3>
+        <p>Soluciones efectivas contra ratas y ratones.</p>
+      </div>
+      <div class="bento-item">
+        <h3>Manejo Integrado de Plagas</h3>
+        <p>Enfoque sostenible y a largo plazo.</p>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 2rem;">
+      <a href="https://wa.me/50685130420?text=Hola%20Alejandro,%20quiero%20mas%20informacion%20sobre%20los%20servicios%20de%20fumigacion." class="whatsapp-button">
+        <i class="fa fa-whatsapp" style="margin-right: 0.5rem;"></i> Consultar todos los servicios de Fumigación
+      </a>
+    </div>
+  </section>
+
+  <section id="fontaneria" class="section">
+    <h2>Servicios de Fontanería</h2>
+    <div class="bento-grid four-items fade-up-children">
+      <div class="bento-item">
+        <h3>Instalación de Tuberías</h3>
+        <p>Instalación profesional de todo tipo de tuberías.</p>
+      </div>
+      <div class="bento-item">
+        <h3>Reparación de Fugas</h3>
+        <p>Detección y reparación eficiente de fugas de agua.</p>
+      </div>
+      <div class="bento-item">
+        <h3>Desatascos</h3>
+        <p>Soluciones rápidas y efectivas para tuberías obstruidas.</p>
+      </div>
+      <div class="bento-item">
+        <h3>Instalación y Reparación de Sanitarios</h3>
+        <p>Servicios completos para sus inodoros y otros sanitarios.</p>
+      </div>
+    </div>
+    <div class="bento-grid four-items fade-up-children" style="margin-top: 1.5rem;">
+      <div class="bento-item">
+        <h3>Instalación de Grifería</h3>
+        <p>Colocación y reemplazo de grifos y llaves.</p>
+      </div>
+      <div class="bento-item">
+        <h3>Reparación de Calentadores de Agua</h3>
+        <p>Servicios para sus calentadores eléctricos y de gas.</p>
+      </div>
+      <div class="bento-item">
+        <h3>Detección de Fugas Ocultas</h3>
+        <p>Tecnología avanzada para encontrar fugas no visibles.</p>
+      </div>
+      <div class="bento-item">
+        <h3>Mantenimiento Preventivo de Fontanería</h3>
+        <p>Revisiones para evitar problemas futuros.</p>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 2rem;">
+      <a href="https://wa.me/50685130420?text=Hola%20Alejandro,%20quiero%20mas%20informacion%20sobre%20los%20servicios%20de%20fontaneria." class="whatsapp-button">
+        <i class="fa fa-whatsapp" style="margin-right: 0.5rem;"></i> Consultar todos los servicios de Fontanería
+      </a>
+    </div>
+  </section>
+
+  <footer class="fade-in" style="text-align: center; padding: 3rem 2rem; background-color: #f8f9fa; border-top: 1px solid #dee2e6;">
+    <p style="font-size: 1.1rem; line-height: 1.6;">
+      Desarrollado por: <span style="font-weight: bold;">Aejandro Gómez Avenaño</span><br>
+      Correo electrónico: <a href="mailto:kendallgomezmolina16@gmail.com" style="color: #007bff; text-decoration: none;">kendallgomezmolina16@gmail.com</a><br>
+      Número de teléfono: <a href="tel:+50685130420" style="color: #007bff; text-decoration: none;">8513-0420</a>
+    </p>
+    <p class="copyright" style="margin-top: 1.5rem; font-size: 0.9rem; color: #6c757d;">
+      © {new Date().getFullYear()} AAGA - Fumigación y Fontanería
+    </p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    const fadeElements = document.querySelectorAll('.fade-in');
+    fadeElements.forEach(el => observer.observe(el));
+
+    // Animación para los elementos del Bento Grid
+    const observerChildren = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const children = entry.target.querySelectorAll('.bento-item');
+          children.forEach((child, index) => {
+            child.classList.add('in-view');
+            observer.unobserve(child);
+          });
+        }
+      });
+    }, { threshold: 0.2 });
+
+    const fadeUpChildrenElements = document.querySelectorAll('.fade-up-children');
+    fadeUpChildrenElements.forEach(el => observerChildren.observe(el));
+
+    // Animación de fondo sutil con colores relajantes
+    function animateBackground() {
+      document.body.style.backgroundPosition = `${performance.now() / 150}px 0`;
+      requestAnimationFrame(animateBackground);
+    }
+    requestAnimationFrame(animateBackground);
+  </script>
+
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f8ff; /* Un azul muy claro y suave (AliceBlue) */
+      color: #343a40;
+      line-height: 1.7;
+      scroll-behavior: smooth;
+      background-image: linear-gradient(to right, #e0f2f7, #f0f8ff, #e0f2f7); /* Degradado suave en tonos azules y blancos */
+      background-size: 200% auto; /* Para la animación */
+      animation: backgroundAnimation 15s linear infinite; /* Ralentizamos un poco la animación */
+    }
+
+    @keyframes backgroundAnimation {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 200% 50%; }
+    }
+
+    .section {
+      padding: 6rem 2rem;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: #007bff;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-color: #e9ecef;
+      padding: 8rem 2rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      color: #212529;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #6c757d;
+      margin-bottom: 2rem;
+    }
+
+    .hero-buttons a {
+      display: inline-block;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      border-radius: 0.3rem;
+      margin: 0 0.5rem;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero-buttons .primary {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .hero-buttons .secondary {
+      background-color: #28a745;
+      color: white;
+    }
+
+    .hero-buttons a:hover {
+      opacity: 0.9;
+    }
+
+    /* Bento Grid */
+    .bento-grid {
+      display: grid;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .bento-item {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+      text-align: left;
+      transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .bento-item.in-view {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .bento-item:hover {
+      transform: translateY(-0.25rem);
+    }
+
+    .bento-item h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #343a40;
+    }
+
+    .bento-item p {
+      color: #6c757d;
+      margin-bottom: 1rem;
+    }
+
+    /* Estilos para forzar 4 items y el mismo tamaño */
+    .bento-grid.four-items {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta el minmax según necesites */
+    }
+
+    .bento-grid.four-items .bento-item {
+      aspect-ratio: 1 / 1; /* Esto fuerza la relación de aspecto 1:1 (cuadrado) */
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Centra el contenido verticalmente */
+      align-items: center; /* Centra el contenido horizontalmente */
+      text-align: center; /* Centra el texto dentro del item */
+      padding: 1.5rem; /* Reduce un poco el padding si el texto es largo */
+    }
+
+    .bento-item h3 {
+      font-size: 1.2rem; /* Reduce el tamaño del título para más contenido */
+      margin-bottom: 0.5rem;
+    }
+
+    .bento-item p {
+      font-size: 0.9rem; /* Reduce el tamaño del párrafo para más contenido */
+      margin-bottom: 0;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .bento-grid.four-items {
+        grid-template-columns: 1fr; /* En pantallas pequeñas, una columna */
+      }
+      .bento-grid.four-items .bento-item {
+        aspect-ratio: auto; /* Quita la relación de aspecto forzada en móviles */
+        display: block; /* Volvemos al display block para el flujo normal */
+        text-align: left; /* Alinea el texto a la izquierda en móviles */
+        padding: 1.5rem;
+      }
+      .bento-item h3 {
+        font-size: 1.5rem;
+      }
+      .bento-item p {
+        font-size: 1rem;
+      }
+    }
+
+    /* Animaciones */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .fade-in.in-view {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .fade-up-children .bento-item {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+    }
+
+    .fade-up-children .bento-item.in-view {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .whatsapp-button {
+      display: inline-flex; /* Usamos flex para alinear icono y texto */
+      align-items: center; /* Centramos verticalmente el icono y el texto */
+      background-color: #25D366; /* Verde WhatsApp */
+      color: white;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      border-radius: 0.5rem; /* Bordes más redondeados */
+      font-weight: bold; /* Texto en negrita para destacar */
+      transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out; /* Transiciones suaves */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ligera sombra para elevación visual */
+      margin: 0.5rem;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #128C7E; /* Verde más oscuro al pasar el ratón */
+      transform: scale(1.05); /* Ligeramente más grande al pasar el ratón */
+    }
+
+    .whatsapp-button i {
+      font-size: 1.5rem; /* Icono más grande */
+      margin-right: 0.75rem; /* Espacio entre el icono y el texto */
+    }
+
+    .whatsapp-button.main {
+      font-size: 1.2rem; /* Un poco más grande para el botón principal */
+      padding: 1.2rem 2.5rem;
+    }
+  </style>
+</BaseLayout>
